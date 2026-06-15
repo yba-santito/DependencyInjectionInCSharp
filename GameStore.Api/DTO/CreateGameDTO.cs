@@ -6,7 +6,7 @@ namespace GameStore.Api.DTO
     (
         [Required][StringLength(50)]string Name,
         [Required][StringLength(50)]string Genre,
-        [Required][StringLength(50)]decimal Price,
+        [Required][Range(1,1000)]decimal Price,
         [Required]DateOnly ReleaseDate
     );
 }
