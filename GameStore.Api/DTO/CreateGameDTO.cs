@@ -4,9 +4,9 @@ namespace GameStore.Api.DTO
 {
     public record CreatGameDTO
     (
-        [Required]string Name,
-        [Required]string Genre,
-        [Required]decimal Price,
+        [Required][StringLength(50)]string Name,
+        [Required][StringLength(50)]string Genre,
+        [Required][StringLength(50)]decimal Price,
         [Required]DateOnly ReleaseDate
     );
 }
