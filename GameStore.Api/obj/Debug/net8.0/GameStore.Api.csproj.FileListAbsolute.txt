@@ -1,0 +1,7 @@
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\GameStore.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\GameStore.Api.AssemblyInfoInputs.cache
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\GameStore.Api.AssemblyInfo.cs
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\GameStore.Api.csproj.CoreCompileInputs.cache
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\GameStore.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mogau\Documents\CodingHub\DependencyInjectionInCSharp\GameStore.Api\obj\Debug\net8.0\GameStore.Api.sourcelink.json
