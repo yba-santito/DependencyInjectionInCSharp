@@ -1,4 +1,6 @@
+using GameStore.Api.Data;
 using GameStore.Api.DTO;
+using GameStore.Api.Models;
 
 namespace GameStore.Api.Endpoints
 {
@@ -35,19 +37,34 @@ namespace GameStore.Api.Endpoints
 
             group.MapPost(
                 "/",
-                (CreatGameDTO newGame) =>
+                (CreatGameDTO newGame, GameStoreContext dbContext) =>
                 {
-                    GameDTO game = new(
-                        games.Count + 1,
-                        newGame.Name,
-                        newGame.Genre,
-                        newGame.Price,
-                        newGame.ReleaseDate
+                    Game game = new()
+                    {
+                        Id = games.Max(g => g.Id) + 1,
+                        Name = newGame.Name,
+                        GenreId = newGame.GenreId,
+                        Price = newGame.Price,
+                        ReleaseDate = newGame.ReleaseDate,
+                    };
+
+                    dbContext.Games.Add(game);
+                    dbContext.SaveChanges();
+                    // games.Add(game);
+
+                    GameDetailsDTO gameDTO = new(
+                        game.Id,
+                        game.Name,
+                        game.GenreId,
+                        game.Price,
+                        game.ReleaseDate
                     );
 
-                    games.Add(game);
-
-                    return Results.CreatedAtRoute(GetGameEndpointName, new { id = game.Id }, game);
+                    return Results.CreatedAtRoute(
+                        GetGameEndpointName,
+                        new { id = gameDTO.Id },
+                        gameDTO
+                    );
                 }
             );
 
