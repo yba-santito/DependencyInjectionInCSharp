@@ -9,13 +9,6 @@ namespace GameStore.Api.Endpoints
     {
         const string GetGameEndpointName = "GetGame";
 
-        private static readonly List<GameSummaryDTO> games =
-        [
-            new(1, "StreetFighter 2", "Fighting", 19.99M, new DateOnly(1992, 7, 15)),
-            new(2, "Final Fantasy VII Rebirth", "RPG", 69.99M, new DateOnly(2024, 2, 29)),
-            new(3, "Astro Bot", "Platformer", 59.99M, new DateOnly(2024, 9, 6)),
-        ];
-
         public static void MapGamesEndpoints(this WebApplication app)
         {
             var group = app.MapGroup("/games");
@@ -117,10 +110,9 @@ namespace GameStore.Api.Endpoints
 
             group.MapDelete(
                 "/{id}",
-                (int id) =>
+                async (int id, GameStoreContext dbContext) =>
                 {
-                    games.RemoveAll(games => games.Id == id);
-
+                    await dbContext.Games.Where(game => game.Id == id).ExecuteDeleteAsync();
                     return Results.NoContent();
                 }
             );
