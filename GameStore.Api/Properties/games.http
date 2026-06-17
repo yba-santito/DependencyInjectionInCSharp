@@ -8,16 +8,16 @@ GET http://localhost:5082/games/5
 POST http://localhost:5082/games
 Content-Type: application/json
 
-{
-    "Name": "Tekken 7",
-    "Genre": "Fighter",
-    "Price": 45.99,
-    "ReleaseDate": "2023-10-20"
+{   
+    "Name": "Tekken 5",
+    "GenreId": 2,
+    "Price": 4.99,
+    "ReleaseDate": "2020-10-20"
 }
 
 
 ###
-PUT http://localhost:5082/games/1
+PUT http://localhost:5082/games/4
 Content-Type: application/json
 
 {
