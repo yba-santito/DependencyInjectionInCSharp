@@ -1,10 +1,10 @@
 # Dependency Injection in C# / ASP.NET Core
 
-Learning Dependency Injection for ASP.NET Core – based on the [ASP.NET Core Full Course For Beginners (.NET 8)](https://www.youtube.com/watch?v=AhAxLiGC7Pc) [reference:0][reference:1].
+Learning Dependency Injection for ASP.NET Core – based on the [ASP.NET Core Full Course For Beginners (.NET 8)](https://www.youtube.com/watch?v=AhAxLiGC7Pc).
 
 ## Overview
 
-This repository contains my learning journey through Dependency Injection (DI) in C# and ASP.NET Core. Dependency Injection is a design pattern where an object receives its dependencies from external sources rather than creating them internally [reference:2]. It helps decouple classes from their dependencies, making applications more modular, maintainable, and testable [reference:3][reference:4].
+This repository contains my learning journey through Dependency Injection (DI) in C# and ASP.NET Core. Dependency Injection is a design pattern where an object receives its dependencies from external sources rather than creating them internally . It helps decouple classes from their dependencies, making applications more modular, maintainable, and testable.
 
 ## Project Structure
 
@@ -17,20 +17,20 @@ DependencyInjectionInCSharp/
 
 ## Tech Stack
 
-- **Language:** C# [reference:5]
+- **Language:** C#
 - **Framework:** ASP.NET Core (.NET 8)
-- **Dependency Injection:** Built-in .NET DI container [reference:6]
+- **Dependency Injection:** Built-in .NET DI container
 
 ## Key Concepts Covered
 
-- **What is Dependency Injection?** – A technique for achieving Inversion of Control (IoC) between classes and their dependencies [reference:7]
-- **Why use DI?** – Reduces tight coupling, makes code easier to test, and improves maintainability [reference:8]
+- **What is Dependency Injection?** – A technique for achieving Inversion of Control (IoC) between classes and their dependencies
+- **Why use DI?** – Reduces tight coupling, makes code easier to test, and improves maintainability
 - **DI Implementation Types:**
-  - **Constructor Injection** – Dependencies are provided via the class constructor [reference:9]
-  - **Property Injection** – Dependencies are set via public properties [reference:10]
-  - **Method Injection** – Dependencies are passed as method parameters [reference:11]
-- **Service Lifetimes:** Transient, Scoped, and Singleton [reference:12]
-- **DI Containers** – Frameworks that create dependencies and inject them automatically [reference:13]
+  - **Constructor Injection** – Dependencies are provided via the class constructor
+  - **Property Injection** – Dependencies are set via public properties
+  - **Method Injection** – Dependencies are passed as method parameters
+- **Service Lifetimes:** Transient, Scoped, and Singleton
+- **DI Containers** – Frameworks that create dependencies and inject them automatically
 
 ## Getting Started
 
@@ -72,3 +72,4 @@ This project is for educational purposes. Feel free to use it as a reference for
 ```bash
 git clone https://github.com/yba-santito/DependencyInjectionInCSharp.git
 cd DependencyInjectionInCSharp
+```
